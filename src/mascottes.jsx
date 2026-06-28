@@ -106,13 +106,13 @@ export const ENERGIES = [
   {
     level: 10,
     country: "🇩🇿", countryName: { fr: "Algérie", en: "Algeria", es: "Argelia" },
-    energy: { fr: "🌪️ Vent", en: "🌪️ Wind", es: "🌪️ Viento" },
+    energy: { fr: "🏜️ Sable", en: "🏜️ Sand", es: "🏜️ Arena" },
     names: { m: "Aminko", f: "Aminka", n: "Aminki" },
-    color: "#A78BFA", glow: "#EDE9FE",
+    color: "#E0C68A", glow: "#F7EFD8",
     jolingos: 5000,
-    details: "wind",
-    animation: "spin",
-    description: { fr: "Libre et puissant, Aminko souffle comme le vent du désert algérien.", en: "Free and powerful, Aminko blows like the wind of the Algerian desert.", es: "Libre y poderoso, Aminko sopla como el viento del desierto argelino." },
+    details: "sand",
+    animation: "drift",
+    description: { fr: "Libre et serein, Aminko ondule comme le sable du Sahara algérien.", en: "Free and serene, Aminko ripples like the sand of the Algerian Sahara.", es: "Libre y sereno, Aminko ondula como la arena del Sáhara argelino." },
   },
   {
     level: 11,
@@ -183,13 +183,13 @@ export const ENERGIES = [
   {
     level: 17,
     country: "🇸🇦", countryName: { fr: "Arabie Saoudite", en: "Saudi Arabia", es: "Arabia Saudita" },
-    energy: { fr: "🏜️ Désert", en: "🏜️ Desert", es: "🏜️ Desierto" },
+    energy: { fr: "🪙 Or", en: "🪙 Gold", es: "🪙 Oro" },
     names: { m: "Omaro", f: "Omara", n: "Omari" },
-    color: "#D97706", glow: "#FEF3C7",
+    color: "#F5B800", glow: "#FFF0B3",
     jolingos: 32000,
-    details: "sand",
-    animation: "drift",
-    description: { fr: "Sage et patient, Omaro traverse les épreuves comme le sable du désert.", en: "Wise and patient, Omaro crosses trials like desert sand.", es: "Sabio y paciente, Omaro atraviesa las pruebas como la arena del desierto." },
+    details: "stars",
+    animation: "twinkle",
+    description: { fr: "Précieux et rayonnant, Omaro brille comme l'or du désert d'Arabie.", en: "Precious and radiant, Omaro shines like the gold of the Arabian desert.", es: "Precioso y radiante, Omaro brilla como el oro del desierto árabe." },
   },
   {
     level: 18,
@@ -205,13 +205,13 @@ export const ENERGIES = [
   {
     level: 19,
     country: "🌋", countryName: { fr: "Île de la Réunion", en: "Réunion Island", es: "Isla de la Reunión" },
-    energy: { fr: "🌺 Métissage", en: "🌺 Blend", es: "🌺 Mestizaje" },
+    energy: { fr: "🌋 Lave", en: "🌋 Lava", es: "🌋 Lava" },
     names: { m: "Kreolo", f: "Kreola", n: "Kreoli" },
-    color: "#EC4899", glow: "#FBCFE8",
+    color: "#FF4D2E", glow: "#FFD0A3",
     jolingos: 50000,
-    details: "tropical",
-    animation: "dance",
-    description: { fr: "Unique et métissé, Kreolo porte toutes les cultures du monde en lui.", en: "Unique and blended, Kreolo carries all the world's cultures within.", es: "Único y mestizo, Kreolo lleva todas las culturas del mundo en él." },
+    details: "lava",
+    animation: "erupt",
+    description: { fr: "Ardent et vivant, Kreolo coule comme la lave du Piton de la Fournaise.", en: "Fiery and alive, Kreolo flows like the lava of Piton de la Fournaise.", es: "Ardiente y vivo, Kreolo fluye como la lava del Piton de la Fournaise." },
   },
   {
     level: 20,
@@ -225,6 +225,30 @@ export const ENERGIES = [
     description: { fr: "Lumio est la lumière pure — le summum du voyage Jolingo.", en: "Lumio is pure light — the pinnacle of the Jolingo journey.", es: "Lumio es luz pura — la cima del viaje Jolingo." },
   },
 ];
+
+// ── HABITUDES CULTURELLES — un trait inspirant par pays (dévoilement progressif) ──
+export const JOKI_CULTURE = {
+  1:  { fr: "En Thaïlande, on salue avec le « wai », mains jointes, en signe de respect et de gratitude.", en: "In Thailand, people greet with the 'wai', hands together, as a sign of respect and gratitude.", es: "En Tailandia, se saluda con el 'wai', manos juntas, como señal de respeto y gratitud." },
+  2:  { fr: "Aux États-Unis, la culture du « small talk » crée du lien avec les inconnus au quotidien.", en: "In the USA, 'small talk' culture builds everyday connection with strangers.", es: "En EE. UU., la cultura del 'small talk' crea vínculos cotidianos con desconocidos." },
+  3:  { fr: "Au Sénégal, la « teranga » (hospitalité) fait qu'on accueille toujours l'autre à sa table.", en: "In Senegal, 'teranga' (hospitality) means always welcoming others to your table.", es: "En Senegal, la 'teranga' (hospitalidad) significa acoger siempre al otro en tu mesa." },
+  4:  { fr: "Au Portugal, la « saudade » célèbre la beauté douce-amère du souvenir et de l'instant.", en: "In Portugal, 'saudade' celebrates the bittersweet beauty of memory and the moment.", es: "En Portugal, la 'saudade' celebra la belleza agridulce del recuerdo y del instante." },
+  5:  { fr: "Au Japon, l'« ikigai » invite à trouver chaque jour sa raison de se lever.", en: "In Japan, 'ikigai' invites you to find your reason to get up each day.", es: "En Japón, el 'ikigai' invita a encontrar cada día tu razón para levantarte." },
+  6:  { fr: "Au Nigeria, l'esprit communautaire « ubuntu » rappelle : je suis parce que nous sommes.", en: "In Nigeria, the communal spirit 'ubuntu' reminds us: I am because we are.", es: "En Nigeria, el espíritu comunitario 'ubuntu' recuerda: soy porque somos." },
+  7:  { fr: "En Chine, le « qì gōng » cultive l'énergie du corps par le souffle et le mouvement lent.", en: "In China, 'qi gong' cultivates body energy through breath and slow movement.", es: "En China, el 'qi gong' cultiva la energía del cuerpo con la respiración y el movimiento lento." },
+  8:  { fr: "Au Danemark, le « hygge » célèbre les petits moments cosy qui réchauffent le cœur.", en: "In Denmark, 'hygge' celebrates cozy little moments that warm the heart.", es: "En Dinamarca, el 'hygge' celebra los pequeños momentos acogedores que reconfortan." },
+  9:  { fr: "Au Mexique, on honore la mémoire et la joie de vivre lors du « Día de los Muertos ».", en: "In Mexico, memory and joy are honored during 'Día de los Muertos'.", es: "En México, se honra la memoria y la alegría en el 'Día de los Muertos'." },
+  10: { fr: "En Algérie, partager un thé à la menthe est un rituel d'amitié et de patience.", en: "In Algeria, sharing mint tea is a ritual of friendship and patience.", es: "En Argelia, compartir un té de menta es un ritual de amistad y paciencia." },
+  11: { fr: "En Angleterre, la pause thé de l'après-midi est un moment sacré de calme.", en: "In England, the afternoon tea break is a sacred moment of calm.", es: "En Inglaterra, la pausa del té de la tarde es un momento sagrado de calma." },
+  12: { fr: "En Uruguay, partager le maté en cercle, c'est partager le temps et la confiance.", en: "In Uruguay, sharing mate in a circle means sharing time and trust.", es: "En Uruguay, compartir el mate en círculo es compartir el tiempo y la confianza." },
+  13: { fr: "En Russie, on valorise les longues conversations sincères, autour d'un thé brûlant.", en: "In Russia, long heartfelt conversations over hot tea are treasured.", es: "En Rusia, se valoran las largas conversaciones sinceras con un té caliente." },
+  14: { fr: "En Indonésie, le « gotong royong » est l'entraide communautaire pour avancer ensemble.", en: "In Indonesia, 'gotong royong' is communal mutual aid to move forward together.", es: "En Indonesia, el 'gotong royong' es la ayuda mutua comunitaria para avanzar juntos." },
+  15: { fr: "Au Daghestan, l'hospitalité envers le voyageur est un honneur transmis de génération en génération.", en: "In Dagestan, hospitality toward travelers is an honor passed down through generations.", es: "En Daguestán, la hospitalidad hacia el viajero es un honor transmitido entre generaciones." },
+  16: { fr: "En Italie, la « dolce vita » célèbre l'art de savourer pleinement chaque instant.", en: "In Italy, 'dolce vita' celebrates the art of fully savoring each moment.", es: "En Italia, la 'dolce vita' celebra el arte de saborear plenamente cada instante." },
+  17: { fr: "En Arabie Saoudite, offrir des dattes et du café au visiteur est un geste de générosité ancestral.", en: "In Saudi Arabia, offering dates and coffee to a visitor is an ancestral gesture of generosity.", es: "En Arabia Saudita, ofrecer dátiles y café al visitante es un gesto ancestral de generosidad." },
+  18: { fr: "En Allemagne, la « Feierabend » marque le moment sacré où le travail s'arrête et le repos commence.", en: "In Germany, 'Feierabend' marks the sacred moment when work stops and rest begins.", es: "En Alemania, el 'Feierabend' marca el momento sagrado en que el trabajo termina y empieza el descanso." },
+  19: { fr: "À La Réunion, le « vivre-ensemble » mêle les cultures dans une même chaleur humaine.", en: "In Réunion, 'living together' blends cultures in a shared human warmth.", es: "En la Reunión, el 'vivir juntos' mezcla culturas en una misma calidez humana." },
+  20: { fr: "En France, l'art de la conversation autour d'un bon repas peut durer des heures.", en: "In France, the art of conversation around a good meal can last for hours.", es: "En Francia, el arte de la conversación en torno a una buena comida puede durar horas." },
+};
 
 // ── SVG MASCOTTE ──────────────────────────────────────────
 export function MascotteCharacter({ energy, genre = "n", size = 120, animated = true }) {
@@ -242,6 +266,17 @@ export function MascotteCharacter({ energy, genre = "n", size = 120, animated = 
     : { rx: 5, ry: 5, lashes: false };
 
   const animId = `anim-${energy.level}-${g}`;
+
+  // ── TIER VISUEL selon le niveau (plus impressionnant en montant) ──
+  const lvl = energy.level || 1;
+  const tier = lvl <= 5 ? 1 : lvl <= 10 ? 2 : lvl <= 15 ? 3 : 4;
+  // Aura : rayon et opacité croissants
+  const auraR = [0, 44, 48, 52, 58][tier];
+  const auraOp = [0, 0.12, 0.20, 0.30, 0.42][tier];
+  const hasCrown = tier >= 3;      // couronne à partir du tier 3
+  const hasWings = tier >= 3;      // ailes à partir du tier 3
+  const isLegendary = tier === 4;  // effets max au tier 4
+  const bodyR = 38 + (tier - 1) * 1.5; // corps légèrement plus grand
 
   return (
     <svg width={size} height={size} viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -295,8 +330,29 @@ export function MascotteCharacter({ energy, genre = "n", size = 120, animated = 
         {/* Ombre douce */}
         <ellipse cx="60" cy="108" rx="24" ry="6" fill="rgba(0,0,0,0.1)"/>
 
-        {/* Corps principal — boule */}
-        <circle cx="60" cy="62" r="38" fill={`url(#bg-${animId})`} filter={`url(#glow-${animId})`}/>
+        {/* AURA — grandit avec le niveau */}
+        {tier >= 2 && (
+          <circle cx="60" cy="62" r={auraR} fill={glow} opacity={auraOp}>
+            {animated && <animate attributeName="opacity" values={`${auraOp};${auraOp*0.5};${auraOp}`} dur="2.5s" repeatCount="indefinite"/>}
+          </circle>
+        )}
+        {/* Halo légendaire supplémentaire */}
+        {isLegendary && (
+          <circle cx="60" cy="62" r="64" fill="none" stroke={color} strokeWidth="1" opacity="0.25" strokeDasharray="3 5">
+            {animated && <animateTransform attributeName="transform" type="rotate" from="0 60 62" to="360 60 62" dur="12s" repeatCount="indefinite"/>}
+          </circle>
+        )}
+
+        {/* AILES — à partir du tier 3 */}
+        {hasWings && (
+          <g opacity={isLegendary ? 0.9 : 0.7}>
+            <path d={`M28 60 Q${tier===4?2:8} ${tier===4?40:48} ${tier===4?6:14} 72 Q22 70 32 66 Z`} fill={glow} stroke={color} strokeWidth="1.5"/>
+            <path d={`M92 60 Q${tier===4?118:112} ${tier===4?40:48} ${tier===4?114:106} 72 Q98 70 88 66 Z`} fill={glow} stroke={color} strokeWidth="1.5"/>
+          </g>
+        )}
+
+        {/* Corps principal — boule (grandit légèrement par tier) */}
+        <circle cx="60" cy="62" r={bodyR} fill={`url(#bg-${animId})`} filter={`url(#glow-${animId})`}/>
 
         {/* Highlight */}
         <ellipse cx="48" cy="48" rx="10" ry="7" fill="rgba(255,255,255,0.35)" transform="rotate(-20 48 48)"/>
@@ -403,6 +459,28 @@ export function MascotteCharacter({ energy, genre = "n", size = 120, animated = 
           ))}
         </>}
 
+        {/* COURONNE — à partir du tier 3, plus riche en légendaire */}
+        {hasCrown && (
+          <g>
+            {isLegendary ? (
+              <>
+                {/* Couronne royale dorée */}
+                <path d="M40 30 L44 18 L52 26 L60 12 L68 26 L76 18 L80 30 Z" fill="#FFD93D" stroke="#F5B800" strokeWidth="1.5"/>
+                <circle cx="60" cy="14" r="3" fill="#FF4D6D"/>
+                <circle cx="44" cy="20" r="2" fill="#4D96FF"/>
+                <circle cx="76" cy="20" r="2" fill="#4D96FF"/>
+                <rect x="40" y="30" width="40" height="5" rx="2" fill="#F5B800"/>
+              </>
+            ) : (
+              <>
+                {/* Petite couronne simple */}
+                <path d="M44 30 L48 20 L54 27 L60 18 L66 27 L72 20 L76 30 Z" fill="#FFD93D" stroke="#F5B800" strokeWidth="1.2"/>
+                <circle cx="60" cy="20" r="2.2" fill="#FF6B6B"/>
+              </>
+            )}
+          </g>
+        )}
+
         {/* Yeux */}
         {/* Oeil gauche */}
         <ellipse cx="46" cy="58" rx={eyeStyle.rx} ry={eyeStyle.ry} fill="white"/>
@@ -443,6 +521,18 @@ export function MascotteCharacter({ energy, genre = "n", size = 120, animated = 
         {/* Petites mains */}
         <circle cx="18" cy="51" r="6" fill={color}/>
         <circle cx="102" cy="51" r="6" fill={color}/>
+
+        {/* PARTICULES LÉGENDAIRES — tier 4 uniquement */}
+        {isLegendary && (
+          <g>
+            {[[18,38],[100,40],[24,88],[96,86],[60,8]].map(([x,y],i)=>(
+              <text key={i} x={x} y={y} fontSize="9" opacity="0.85">
+                ✨
+                {animated && <animate attributeName="opacity" values="0.3;1;0.3" dur={`${1.5+i*0.3}s`} repeatCount="indefinite"/>}
+              </text>
+            ))}
+          </g>
+        )}
       </g>
 
       {/* Nom sous la mascotte */}
@@ -554,6 +644,43 @@ export function JolingoTree({ capturedCount, size = 200 }) {
         <circle cx="122" cy="120" r="5" fill="#22C55E" className="sparkle" style={{animationDelay:"0.3s"}}/>
         <circle cx="100" cy="105" r="5" fill="#BAE6FD" className="sparkle" style={{animationDelay:"0.6s"}}/>
       </>}
+    </svg>
+  );
+}
+
+// ── JOKI MYSTÈRE — silhouette du prochain Joki à découvrir ──
+export function MysteryJoki({ energy, size = 110, animated = true }) {
+  // Affiche le Joki en ombre/silhouette, avec son énergie et un halo mystérieux
+  const color = energy.color;
+  const glow = energy.glow;
+  return (
+    <svg width={size} height={size} viewBox="0 0 120 120" fill="none">
+      <defs>
+        <radialGradient id={`myst-${energy.level}`} cx="50%" cy="45%">
+          <stop offset="0%" stopColor="#2D2A45"/>
+          <stop offset="100%" stopColor="#15131F"/>
+        </radialGradient>
+        {animated && <style>{`
+          @keyframes mystFloat${energy.level}{0%,100%{transform:translateY(0)}50%{transform:translateY(-5px)}}
+          @keyframes mystGlow${energy.level}{0%,100%{opacity:0.25}50%{opacity:0.5}}
+          .myst${energy.level}{animation:mystFloat${energy.level} 3.5s ease-in-out infinite}
+          .mystg${energy.level}{animation:mystGlow${energy.level} 2.5s ease-in-out infinite}
+        `}</style>}
+      </defs>
+      {/* Halo coloré de l'énergie */}
+      <circle className={animated?`mystg${energy.level}`:""} cx="60" cy="60" r="46" fill={glow} opacity="0.3"/>
+      <g className={animated?`myst${energy.level}`:""}>
+        {/* Ombre du corps */}
+        <ellipse cx="60" cy="108" rx="22" ry="5" fill="rgba(0,0,0,0.15)"/>
+        <circle cx="60" cy="62" r="38" fill={`url(#myst-${energy.level})`}/>
+        {/* Contour lumineux de la couleur d'énergie */}
+        <circle cx="60" cy="62" r="38" fill="none" stroke={color} strokeWidth="1.5" opacity="0.4"/>
+        {/* Petits bras en ombre */}
+        <path d="M 24 65 Q 17 60 20 53" stroke="#2D2A45" strokeWidth="7" strokeLinecap="round" fill="none"/>
+        <path d="M 96 65 Q 103 60 100 53" stroke="#2D2A45" strokeWidth="7" strokeLinecap="round" fill="none"/>
+        {/* Gros point d'interrogation */}
+        <text x="60" y="74" textAnchor="middle" fontFamily="'Poppins',sans-serif" fontWeight="800" fontSize="38" fill={color} opacity="0.55">?</text>
+      </g>
     </svg>
   );
 }
